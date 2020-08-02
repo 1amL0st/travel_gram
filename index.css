@@ -1,3 +1,161 @@
+@font-face {
+    font-family: 'Myriad Pro';
+    font-style: normal;
+    src: local('Myriad Pro'), url('fonts/myriad_pro/MYRIADPRO-REGULAR.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Myriad Pro'), url('fonts/myriad_pro/MyriadPro-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Zurichbt Extended';
+    src: local('Zurichbt Extended'), url('fonts/zurich_bt/Zurich__Extended_BT.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Zurichbt Black Extended';
+    src: local('Zurichbt Black Extended'), url('fonts/zurich_bt/Zurich__Ultra_Black_Extended_BT.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Myriad Pro'), url('fonts/myriad_pro/MYRIADPRO-SEMIBOLD.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Myriad Pro'), url('fonts/myriad_pro/MYRIADPRO-BOLD.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Helvetica LTS';
+    font-style: normal;
+    src: local('Helvetica'), url('fonts/helvetica_lts/HelveticaLTStd-UltraComp.otf') format('opentype');
+}
+
+@font-face {
+    font-family: "Bank Gothic";
+    font-style: normal;
+    src: local("Bank Gothic"), url("fonts/bank_gothic/BankGothic\ Regular.ttf") format('truetype')
+}
+
 body {
-    background-color: red;
+    font-family: 'Myriad Pro';
+    max-width: 1920px;
+    margin: 0;
+}
+
+body > * {
+    margin: 0 auto 0 auto;
+}
+
+.container {
+    max-width: 1176px;
+}
+
+.header-top {    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div {
+    width: 100%;
+    font-size: 14px;
+}
+
+.search {
+    max-width: 186px;
+}
+
+.search input {
+    max-width: 128px;
+    font-family: 'Merriweather';
+    font-style: italic;
+    font-weight: 300;
+}
+
+.search * {
+    border: none;
+    display: inline-block;
+}
+
+.search button {
+    width: 14px;
+    height: 14px;
+}
+
+.logo {
+    width: 240px;
+    height: 256px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo-bow-text {
+    position: relative;
+    margin-bottom: -32px;
+}
+
+.logo-bold {
+    font-family: 'Helvetica LTS';
+    font-style: normal;
+    font-size: 64px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.subscribe {
+    font-size: 14px;
+    font-family: 'Dosis';
+    font-weight: 600;
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-bottom div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-nav {
+    max-width: 775px;
+}
+
+.header-nav a {
+    font-size: 14px;
+    font-family: 'Myriad Pro';
+    font-weight: 600;
+}
+
+.header-nav a:hover {
+    color: #ffd74a;
+}
+
+.header-contacts a {
+    margin-left: 20px;
+}
+
+.header-contacts {
+    width: auto;
+    max-width: 200px;
+    float: right;
 }
