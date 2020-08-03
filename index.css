@@ -58,6 +58,7 @@ body > * {
 }
 
 .header {
+    margin-top: 32px;
     width: 100%;
     max-width: 1176px;
 }
@@ -114,6 +115,7 @@ header div {
     font-family: 'Helvetica LTS';
     font-style: normal;
     font-size: 64px;
+    margin-top: 0px;
 }
 
 .link {
@@ -173,11 +175,19 @@ header .link {
     color: white;
 }
 
-.featured .background {
+.background {
     position: absolute;
     z-index: -1;
     width: 100%;
     height: 100%;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;    
+}
+
+.featured .background {
     background-image: url("images/first_section_bg.png");
     overflow: hidden;
 }
@@ -221,7 +231,7 @@ header .link {
 
 .featured .article h {
     display: block;
-    font-weight: 600px;
+    font-weight: 600;
     margin-bottom: 24px;
 }
 
@@ -282,10 +292,10 @@ header .link {
 
 .yellow-button-arrow {
     position: absolute;
-    top: -4px;
-    right: -4px;
-    width: 24px;
-    height: 24px;
+    top: 0px;
+    right: 0px;
+    width: 16px;
+    height: 16px;
     background: url('images/yellow_button_arrow.png') no-repeat center;
 }
 
@@ -302,4 +312,153 @@ header .link {
     width: 16px;
     height: 16px;
     border-radius: 50%;
+}
+
+/*
+**************************************************************************
+*/
+
+.about {
+    display: flex;
+    flex-direction: row;
+    height: 720px;
+    width: 100%;
+}
+
+.shadowed-box {
+    background-color: white;
+    box-shadow: 5px 5px 2px 2px lightgray;
+}
+
+.shadowed-box .thin-line {
+    max-width: 90%;
+}
+
+.about > div {
+    display: inline-block;
+}
+
+.about-left {
+    max-width: 614px;
+    margin-top: 72px;
+    text-align: center;
+}
+
+.about-left img {
+    margin-top: 45px;
+}
+
+.about-right {
+    margin-left: 32px;
+    max-width: 1200px;
+    overflow: hidden;
+}
+
+.about-right .shadowed-box {
+    margin: 16px;
+}
+
+.wide-cell {
+    width: 520px;
+    padding: 0 128px 32px 40px;
+}
+
+.about .yellow-button {
+    font-family: 'Myriad Pro';
+    font-size: 24px;
+    font-weight: bold;
+
+    display: inline;
+}
+
+.share {
+    display: inline;
+    margin: auto auto auto 64px;
+}
+
+.share p {
+    margin-right: 32px;
+    color: #a8aeae;
+}
+
+.share * {
+    display: inline-block;
+}
+
+.share .link{
+    margin-left: 16px;
+    width: 24px;
+    height: 24px;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.link-facebook {
+    background-image: url("images/share_facebook.png");
+}
+
+.link-instagram {
+    background-image: url("images/share_instagram.png");
+}
+
+.link-twitter {
+    background-image: url("images/share_twitter.png");
+}
+
+.share-panel .link {
+    width: 32px;
+    height: 32px;
+}
+
+.shadowed-box p {
+    font-size: 24px;
+}
+
+.map-box {
+    max-width: 600px;
+    font-weight: bold;
+    padding-bottom: 16px;
+}
+
+.narrow-cell {
+    width: 512px;
+    height: 608px;
+}
+
+.second-cell {
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+}
+
+.second-cell, .fourth-cell {
+    position: relative;
+    z-index: 10;
+}
+
+.second-cell {
+    left: -64px;
+}
+
+.fourth-cell {
+    left: -256px;
+    padding-left: 200px;
+    z-index: -1;
+}
+
+.second-cell .yellow-button {
+    margin: auto;
+    background: transparent;
+    border: solid 2px white;
+    color: white;
+}
+
+.third-cell {
+    position: relative;
+    top: -78px;
+}
+
+.third-cell .background {
+    z-index: 0;
 }
