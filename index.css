@@ -337,17 +337,24 @@ header .link {
 .about {
     display: flex;
     flex-direction: row;
-    height: 720px;
+    justify-content: center;
     width: 100%;
 }
 
 .shadowed-box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
     background-color: white;
     box-shadow: 5px 5px 2px 2px lightgray;
 }
 
 .shadowed-box .thin-line {
     max-width: 90%;
+}
+
+.about-right .shadowed-box{
+    max-height: 380px;
 }
 
 .about > div {
@@ -358,6 +365,10 @@ header .link {
     max-width: 614px;
     margin-top: 72px;
     text-align: center;
+}
+
+.about-left .shadowed-box {
+    display: block;
 }
 
 .map {
@@ -435,36 +446,47 @@ header .link {
 }
 
 .about .about-right {
-    display: block;
-    margin-left: 32px;
-    max-width: 1200px;
-    height: 100%;
-}
-
-.about .about-right table {
-    overflow: hidden;
-    table-layout: fixed;
+    display: flex;
+    flex-direction: column;
+    margin: 64px 0 auto 64px;
     width: 100%;
 }
 
-.about-right .shadowed-box {
-    margin: 16px;
+.about-right {
+    max-height: 400px;
 }
 
-.about-lifestyle img {
-    width: 100%;
+.second-post {
+    margin-top: 0;
 }
 
-.about-right .about-lifestyle {
-    margin-top: -48px;
+.second-box {
+    margin-top: 72px;
 }
 
-.wide-post {
-    width: 520px;
-    padding: 0 128px 32px 40px;
+.post-image {
+    position: relative;
+    width: 570px;
+    height: 570px;
+    background-color: red;
+}
+
+.first-post-image {
+    top: -100px;
+    right: 64px;
+}
+
+.second-post {
+    right: 64px;
+}
+
+.post {
+    position: relative;
+    max-width: 480px;
 }
 
 .post-h1 {
+    font-size: 32px;
     position: relative;
     width: 100%;;
 }
@@ -594,5 +616,34 @@ header .link {
 */
 
 .categories {
-    background-color: lightgreen;
+    margin-top: 64px;
+    z-index: 5;
+}
+
+.categories-left {
+    float: left;
+    background-color: red;
+    width: 606px;
+    height: 1024px;
+}
+
+.categories-right {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 1280px;
+    top: -128px;
+    float: right;
+}
+
+.photo-post.narrow {
+    max-width: 591px;
+}
+
+.narrow .post-statistics {
+    float: none;
+}
+
+.narrow .post-h1 {
+    text-align: center;
 }
