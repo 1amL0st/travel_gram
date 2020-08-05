@@ -5,6 +5,13 @@
 }
 
 @font-face {
+    font-family: 'Neoteric';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Neoteric'), url('fonts/neoteric/NEOTERIC_Bold.ttf') format('truetype');
+}
+
+@font-face {
     font-family: 'Myriad Pro';
     font-style: normal;
     font-weight: 300;
@@ -254,30 +261,30 @@ header .link {
     transform: rotate(180deg);
 }
 
-.featured .content .left {
+.featured .content-left {
     float: left;
 }
 
-.featured .content .right h {
+.featured .content-right h {
     font-size: 44px;
     font-family: 'Zurichbt Black Extended';
     margin: 0px;
 }
 
-.featured .content .right p {
+.featured .content-right p {
     margin: 0px;
     font-size: 15px;
     font-weight: 300;
     margin-top: 8px;
 }
 
-.featured .content .right {
+.featured .content-right {
     float: right;
     margin: -8px 0 0 16px;
     max-width: 500px;
 }
 
-.yellow-button {
+.button {
     position: relative;
     font-family: 'Myriad Pro';
     font-weight: bold;
@@ -290,7 +297,7 @@ header .link {
     border: none;
 }
 
-.yellow-button-arrow {
+.button-arrow {
     position: absolute;
     top: 0px;
     right: 0px;
@@ -299,7 +306,7 @@ header .link {
     background: url('images/yellow_button_arrow.png') no-repeat center;
 }
 
-.featured .right .yellow-button {
+.featured .content-right .button {
     margin-top: 30px;
     font-size: 18px;
 }
@@ -348,6 +355,50 @@ header .link {
     margin-top: 45px;
 }
 
+.about-me {
+    padding: 32px 70px 30px 70px;
+    max-height: 440px;
+}
+
+.about-me h {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.about-me p {
+    font-size: 24px;
+    font-weight: 300;
+    color: #575c5c;
+}
+
+.about-me-follow {
+    font-family: "Neoteric";
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 0px;
+}
+
+.about-me-socials .link img {
+    margin-top: 0px;
+}
+
+.about-me-socials .link {
+    margin-right: 32px;
+}
+
+.about-me-socials {
+    width: 100%;
+    margin-top: 32px;
+}
+
+.about-me-follow {
+    font-size: 36px;
+}
+
+.about-me-text {
+    font-size: 24px;
+}
+
 .about-right {
     margin-left: 32px;
     max-width: 1200px;
@@ -363,7 +414,7 @@ header .link {
     padding: 0 128px 32px 40px;
 }
 
-.about .yellow-button {
+.about .button {
     font-family: 'Myriad Pro';
     font-size: 24px;
     font-weight: bold;
@@ -421,6 +472,10 @@ header .link {
     padding-bottom: 16px;
 }
 
+.map-box h1 {
+    font-size: 30px;
+}
+
 .narrow-cell {
     width: 512px;
     height: 608px;
@@ -447,7 +502,7 @@ header .link {
     z-index: -1;
 }
 
-.second-cell .yellow-button {
+.second-cell .button {
     margin: auto;
     background: transparent;
     border: solid 2px white;
