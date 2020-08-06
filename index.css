@@ -790,7 +790,7 @@ header .link {
 }
 
 .tags h1 {
-    font-style: 'Pompiere';
+    font-family: 'Pompiere';
     font-size: 44px;
 }
 
@@ -835,6 +835,7 @@ header .link {
 }
 
 .gallery {
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -850,6 +851,90 @@ header .link {
 }
 
 .gallery-img {
-    max-width: 547px;
+    max-width: 540px;
     max-height: 598px;
+}
+
+.sn-contacts {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    margin: 64px auto 64px auto;
+}
+
+.sn-contacts .link img {
+    margin-left: 16px;
+}
+
+.sn-contacts .link {
+    margin: 0px 8px;
+}
+
+.footer {
+    padding: 32px 0 0 0;
+    background-color: #737373;
+}
+
+.footer-top {
+    display: flex;
+    width: 100%;
+}
+
+.footer .logo-bold {
+    color: white;
+}
+
+.footer-top .logo {
+    margin: auto;
+}
+
+.footer .navigation {
+    width: 50%;
+    margin: auto;
+}
+
+.footer .link:hover {
+    color: #ffd74a;
+}
+
+.footer-bottom {
+    position: relative;
+    display: flex;
+    margin-top: 64px;
+    width: 100%;
+    background-color: white;
+}
+
+.authors {
+    font-size: 24px;
+    position: absolute;
+    right: 16px;
+    bottom: 0;
+    color : gray;
+}
+
+.left-bottom-path {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: rotate(180deg) scale(0.5);
+}
+
+.right-bottom-path {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: rotate(90deg) scale(0.5);
+}
+
+.footer-bottom .arrow-button {
+    position: relative;
+    top: -32px;
+    margin: auto;
+    width: 64px;
+    height: 64px;
+    background: url('images/button_arrow.png') no-repeat center;
+    background-color:white;
+    background-blend-mode: exclusion;
 }
