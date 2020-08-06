@@ -198,6 +198,7 @@ header .link {
 }
 
 .background-image {
+    position: absolute;
     width: 100%;
     height: 100%;    
 }
@@ -367,7 +368,8 @@ header .link {
     text-align: center;
 }
 
-.about-left .shadowed-box {
+.about-left > .shadowed-box {
+    margin-top: 64px;
     display: block;
 }
 
@@ -375,9 +377,9 @@ header .link {
     margin-top: 45px;
 }
 
-.about-me {
-    padding: 32px 70px 30px 70px;
-    max-height: 440px;
+.about-me > img {
+    margin-top: 16px;
+    width: 100%;
 }
 
 .about-me h {
@@ -475,7 +477,7 @@ header .link {
 }
 
 .second-post-box {
-    margin-top: 64px;
+    margin-top: 56px;
 }
 
 .post-image {
@@ -685,11 +687,78 @@ header .link {
 **************************************************************************
 */
 
+.shadowed-box.categories {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.categories {
+    margin-top: 64px;
+    z-index: 5;
+}
+
+.categories h1 {
+    font-family: 'Pompiere';
+    font-size: 34px;
+    margin-top: 0;
+}
+
+.categories .link {
+    font-family: 'Myriad Pro';
+    font-size: 18px;
+    font-style: normal;
+    color: #575c5c;
+    margin: 8px auto 8px auto;
+}
+
+.recent-posts {
+    padding: 16px 0 32px 0;
+    margin-top: 32px;
+    max-height: none;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.post-preview {
+    display: flex;
+    align-items: center;
+    max-width: fit-content;
+    margin: 16px auto 0 auto;
+}
+
+.post-preview-text {
+    margin-left: 8px;
+}
+
+.post-preview-label::first-line {
+    font-family: 'Neoteric';
+    color: black;
+}
+
+.post-preview-label {
+    font-size: 16px; 
+    text-align: left;
+    color: #575c5c;
+}
+
+.post-preview-img {
+    max-width: 184px;
+    max-height: 160px;
+}
+
+.shadowed-box.recent-post {
+    display: flex;
+    flex-direction: column;
+}
+
 .narrow-posts {
     display: flex;
     justify-content: space-between;
     width: 100%;
     margin-top: 64px;
+    padding-bottom: 32px;
 }
 
 .narrow-posts.shadowed-box {
@@ -697,7 +766,7 @@ header .link {
 }
 
 .last-post-box {
-    margin-top: 64px;
+    margin-top: 56px;
 }
 
 .narrow-posts .shadowed-box {
@@ -716,27 +785,71 @@ header .link {
     text-align: center;
 }
 
-.categories {
-    margin-top: 64px;
-    z-index: 5;
-}
-
-.categories-left {
-    float: left;
-    background-color: red;
-    width: 606px;
-    height: 1024px;
-}
-
-.categories-right {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    width: 1280px;
-    top: -128px;
-    float: right;
-}
-
 .photo-post.narrow {
     max-width: 591px;
+}
+
+.tags h1 {
+    font-style: 'Pompiere';
+    font-size: 44px;
+}
+
+.tags-table {
+    margin: auto;
+}
+
+.tags-table td {
+    padding: 16px 32px;
+}
+
+.tag {
+    width: 128px;
+
+    border: solid 3px orange;
+}
+
+.contact-me-form {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 32px 16px 32px;
+}
+
+.contact-me-form .input {
+    max-width: none;
+    width: 100%;
+    margin-top: 16px;
+}
+
+.about-footer {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 32px 64px;
+}
+
+.pages .link {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin: 0 16px 0 16px;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 64px;
+}
+
+.gallery .shadowed-box {
+    margin-bottom: 32px;
+}
+
+.gallery-second {
+    display: flex;
+}
+
+.gallery-img {
+    max-width: 547px;
+    max-height: 598px;
 }
